@@ -5,4 +5,5 @@ export interface Experience {
     endDate: string;
     description: string;
     logoUrl?: string;
+    location?: string;
 }

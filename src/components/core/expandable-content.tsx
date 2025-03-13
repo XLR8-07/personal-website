@@ -26,7 +26,10 @@ export default function ExpandableContent({ experience }: { experience: Experien
                         </Flex>
                         <Text size={'1'}>{experience.role}</Text>
                     </Flex>
-                    <Text size={'2'} className={'text-gray-500'}>{experience.startDate} - {experience.endDate}</Text>
+                    <Flex direction={'column'} className={'text-right'}>
+                        <Text size={'2'} className={'text-gray-500'}>{experience.location}</Text>
+                        <Text size={'2'} className={'text-gray-500'}>{experience.startDate} - {experience.endDate}</Text>
+                    </Flex>
                 </Flex>
                 <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: isExpanded ? 1 : 0, height: isExpanded ? 'auto' : 0 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} className={'overflow-hidden'}>
                     <Box className={'pt-4'}>
