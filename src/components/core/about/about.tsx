@@ -4,7 +4,7 @@ import AnimatedShinyText from '@/components/magicui/animated-shiny-text';
 import BoxReveal from '@/components/magicui/box-reveal';
 import { SectionHeading } from '../section-heading';
 import { Selfie } from './selfie';
-import { Technology } from './technology';
+
 export const About = () => {
     return (
         <Flex direction={'column'} gap={'8'}>
@@ -14,7 +14,7 @@ export const About = () => {
                 <SectionHeading title={'About Me'} />
                 <BoxReveal boxColor={'black'}>
                     <AnimatedShinyText className={'text-gray-500 dark:text-gray-300 text-sm sm:text-lg'} shimmerWidth={200}>
-                        Hello! I&apos;m Ashiq, a Software Engineer with interests in Data
+                        I&apos;m Ashiq , a Software Engineer and Educator with interests in Data
                         Science, Robotics and Computer Vision.
                         <br />
                         Currently, I am a Senior Software Engineer at{" "}
@@ -30,7 +30,6 @@ export const About = () => {
                     </AnimatedShinyText>
                 </BoxReveal>
             </Flex>
-            <Technology />
         </Flex>
     );
 }

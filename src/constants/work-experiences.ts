@@ -43,7 +43,7 @@ export const WORK_EXPERIENCES: Experience[] = [
         startDate: 'Feb 2021',
         endDate: 'Jun 2021',
         description: 'Built and maintained server-side applications.',
-        logoUrl: '/logos/Work/impulse-logo.png',
+        logoUrl: '/logos/Work/impulse-logo.jpeg',
         location: 'Dhaka, Bangladesh',
     }
 ]
