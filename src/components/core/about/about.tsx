@@ -4,7 +4,7 @@ import AnimatedShinyText from '@/components/magicui/animated-shiny-text';
 import BoxReveal from '@/components/magicui/box-reveal';
 import { SectionHeading } from '../section-heading';
 import { Selfie } from './selfie';
-
+import { Technology } from './technology';
 export const About = () => {
     return (
         <Flex direction={'column'} gap={'8'}>
@@ -13,7 +13,7 @@ export const About = () => {
             <Flex direction={'column'} gap={'3'}>
                 <SectionHeading title={'About Me'} />
                 <BoxReveal boxColor={'black'}>
-                    <AnimatedShinyText className={'text-gray-400 text-sm sm:text-lg'} shimmerWidth={200}>
+                    <AnimatedShinyText className={'text-gray-500 dark:text-gray-300 text-sm sm:text-lg'} shimmerWidth={200}>
                         Hello! I&apos;m Ashiq, a Software Engineer with interests in Data
                         Science, Robotics and Computer Vision.
                         <br />
@@ -23,14 +23,14 @@ export const About = () => {
                         </Link>
                         , Berlin, Germany where I am primarily working on the mycashbacks
                         browser extension and the google cloud function for the mycashbacks
-                        backend. Before being a Senior Software Engineer, I was a Lecturer in
-                        the Department of CSE, United International University, Bangladesh where
+                        backend. Before this, I was a Lecturer in
+                        the Department of CSE, <Link href="https://uiu.ac.bd">United International University</Link>, Bangladesh where
                         I used to teach Data Science and Mobile Application Development. I love
                         to play Video Games, Guitar and Badminton in my free time.
                     </AnimatedShinyText>
                 </BoxReveal>
             </Flex>
-            { /* <Technology /> */}
+            <Technology />
         </Flex>
     );
 }
