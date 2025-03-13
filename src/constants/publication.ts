@@ -18,11 +18,11 @@ export const PUBLICATIONS: Publication[] = [
         shortDescription: 'we present an integrated approach to real-time mosquito detection using our multiclass dataset (MosquitoFusion) containing 1204 diverse images and leverage cutting-edge technologies, specifically computer vision, to automate the identification of Mosquitoes, Swarms, and Breeding Sites.',
         longDescription: 'Mosquitoes are a major public health concern, causing diseases like malaria, dengue, and Zika. Accurate detection of mosquitoes is crucial for effective mosquito control. We present MosquitoFusion, a multiclass dataset of 1,204 diverse images containing mosquitoes, swarms, and breeding sites. Leveraging cutting-edge technologies, specifically computer vision, we automate the identification of mosquitoes, swarms, and breeding sites. Our dataset is a valuable resource for researchers developing and evaluating machine learning algorithms for mosquito detection.',
         authors: ['Md Ashiqur Rahman', 'Iftekharul Abedeen' , 'Fatema Zohra Prottyasha' , 'Tasnim Ahmed', 'Tareque Mohmud Chowdhury' , 'Swakkhar Shatabda'],
-        year: 2023,
-        publisher: 'Nature Scientific Data',
-        publisherType: 'Journal',
-        publisherLogo: '/logos/Publication/publishers/nature-logo.png',
+        year: 2024,
+        publisher: 'International Conference on Learning Representations (ICLR)',
+        publisherType: 'Conference',
+        publisherLogo: '/logos/Publication/publishers/iclr-logo.png',
         coverImage: 'Cover Image',
-        link: 'https://www.nature.com/articles/s41597-023-02432-4'
+        link: 'https://openreview.net/forum?id=3s4hFx8pYs&referrer=%5Bthe%20profile%20of%20Md%20Ashiqur%20Rahman%5D(%2Fprofile%3Fid%3D~Md_Ashiqur_Rahman3)'
     }
 ]
