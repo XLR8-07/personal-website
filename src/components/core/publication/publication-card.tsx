@@ -7,6 +7,7 @@ import { Card, Dialog, Flex, Heading, Inset, Text } from '@radix-ui/themes';
 import { Separator } from "radix-ui";
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
+import './publication-card.css';
 // import { FaEye } from "react-icons/fa";
 
 
@@ -45,7 +46,7 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                 </Dialog.Trigger>
                 <Dialog.Content>
                     <Inset clip={'padding-box'} side={'top'} pb={'current'}>
-                        <Image priority src={publication.coverImage} alt={'placeholder'} width={700} height={400} className={'w-fit rounded-t-xl border-b-[3px] border-[--gray-12]'} />
+                        <Image priority src={publication.coverImage} alt={'placeholder'} width={700} height={400} className={'w-fit rounded-t-xl'} />
                     </Inset>
                     <Dialog.Title>
                         {publication.title}
