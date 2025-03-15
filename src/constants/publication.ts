@@ -10,7 +10,7 @@ export const PUBLICATIONS: Publication[] = [
         publisher: 'Nature Scientific Data',
         publisherType: 'Journal',
         publisherLogo: '/logos/Publication/publishers/nature_logo.png',
-        coverImage: 'Cover Image',
+        coverImage: '/logos/Publication/coverImg/fracatlas_cover.webp',
         link: 'https://www.nature.com/articles/s41597-023-02432-4'
     },
     {
