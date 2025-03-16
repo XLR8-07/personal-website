@@ -3,11 +3,10 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Publication } from "@/types/publication"
-import { Card, Dialog, Flex, Heading, Inset, Text } from '@radix-ui/themes';
+import { Button, Card, Dialog, Flex, Heading, Inset, Text } from '@radix-ui/themes';
 import { Separator } from "radix-ui";
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
-import './publication-card.css';
 // import { FaEye } from "react-icons/fa";
 
 
@@ -45,7 +44,7 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                     </Flex>
                 </Dialog.Trigger>
                 <Dialog.Content>
-                    <Inset clip={'padding-box'} side={'top'} pb={'current'}>
+                    <Inset clip={'padding-box'} side={'top'} pb={'current'} pt={'current'} px={'current'}>
                         <Image priority src={publication.coverImage} alt={'placeholder'} width={700} height={400} className={'w-fit rounded-t-xl'} />
                     </Inset>
                     <Dialog.Title>
@@ -54,16 +53,40 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                     <Dialog.Description>
                         {publication.authors.join(', ')}
                     </Dialog.Description>
-                    <Separator.Root className="SeparatorRoot" style={{ margin: "15px 0" }} />
-                    <Text>
+                    <Separator.Root className="bg-black dark:bg-white h-[1px] w-full" style={{ margin: "15px 0" }} />
+                    {/* <Text size={'1'}>
                         {publication.shortDescription}
-                    </Text>
-                    <Separator.Root
-                        className="SeparatorRoot"
-                        decorative
-                        orientation="vertical"
-                        style={{ margin: "0 15px" }}
-                    />
+                    </Text> */}
+                    <Flex direction={'row'} align={'center'} justify={'start'}>
+                        <Flex direction={'column'} justify={'center'} gap={'2'}>
+                            <Button variant={'outline'}>
+                                Read More
+                            </Button>
+                            <Button>
+                                PDF
+                            </Button>
+                        </Flex>
+                        <Separator.Root
+                            className="bg-black dark:bg-white h-[100px] w-[1px]"
+                            decorative
+                            orientation="vertical"
+                            style={{ margin: "0 15px" }}
+                        />
+                        <Flex direction={'column'} justify={'center'} gap={'2'}>
+                            <Text size={'1'}>Code Repository</Text>
+
+                        </Flex>
+                        <Separator.Root
+                            className="bg-black dark:bg-white h-[100px] w-[1px]"
+                            decorative
+                            orientation="vertical"
+                            style={{ margin: "0 15px" }}
+                        />
+                        <Flex direction={'column'} justify={'center'} gap={'2'}>
+                            <Text size={'1'}>Code Repository</Text>
+                        </Flex>
+                    </Flex>
+
                 </Dialog.Content>
             </Dialog.Root>
         </MagicCard>
