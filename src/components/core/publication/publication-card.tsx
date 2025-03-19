@@ -23,9 +23,6 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                     <Flex direction={'row'}>
                         <Card size={'2'} className='relative w-[140px] h-[100px] mx-2 my-2 object-cover flex justify-center items-center'>
                             <Inset clip={'padding-box'}>
-                                {/* <Flex className={'group cursor-pointer z-50 transition-all hover:bg-opacity-15 hover:backdrop-blur-sm h-full w-full absolute'} align={'center'} justify={'center'}>
-                        <FaEye size={'3rem'} className={'transition-all text-[--gray-12] opacity-0 group-active:scale-90 group-hover:opacity-100'} />
-                    </Flex> */}
                                 <BlurFade yOffset={0} delay={0.5 * index} inView>
                                     <Image priority src={publication.publisherLogo} alt={'placeholder'} width={500} height={275} className={'-z-20 h-fit rounded-xl'} />
                                 </BlurFade>
@@ -72,7 +69,6 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                             style={{ margin: "0 15px" }}
                         />
                         <Flex direction={'column'} justify={'center'} gap={'2'}>
-                            {/* <Text size={'2'} weight={'bold'}>Code Repository: </Text> */}
                             <Flex direction={'row'} align={'center'} justify={'center'} gap={'2'}>
                                 <Tooltip content={'Github Repository'}>
                                     <IconButton color={'gray'} size={'3'} radius={'full'} className={'cursor-pointer'} onClick={() => {
