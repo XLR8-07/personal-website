@@ -10,8 +10,9 @@ export const PUBLICATIONS: Publication[] = [
         publisher: 'Nature Scientific Data',
         publisherType: 'Journal',
         publisherLogo: '/logos/Publication/publishers/nature_logo.png',
-        coverImage: '/logos/Publication/coverImg/fracatlas_cover.webp',
-        link: 'https://www.nature.com/articles/s41597-023-02432-4'
+        coverImage: '/logos/Publication/coverImg/fracatlas_cover.webp', 
+        link: 'https://www.nature.com/articles/s41597-023-02432-4',
+        technologies: ['Computer Vision', 'Medical Imaging', 'Fracture Localization', 'Fracture Segmentation']
     },
     {
         title: 'MosquitoFusion: A Multiclass Dataset for Real-Time Detection of Mosquitoes, Swarms, and Breeding Sites Using Deep Learning',
@@ -22,7 +23,8 @@ export const PUBLICATIONS: Publication[] = [
         publisher: 'International Conference on Learning Representations (ICLR)',
         publisherType: 'Conference',
         publisherLogo: '/logos/Publication/publishers/iclr_logo.png',
-        coverImage: 'Cover Image',
-        link: 'https://openreview.net/forum?id=3s4hFx8pYs&referrer=%5Bthe%20profile%20of%20Md%20Ashiqur%20Rahman%5D(%2Fprofile%3Fid%3D~Md_Ashiqur_Rahman3)'
+        coverImage: '/logos/Publication/coverImg/mosquitofusion_cover.jpg',
+        link: 'https://openreview.net/forum?id=3s4hFx8pYs&referrer=%5Bthe%20profile%20of%20Md%20Ashiqur%20Rahman%5D(%2Fprofile%3Fid%3D~Md_Ashiqur_Rahman3)',
+        technologies: ['Computer Vision','Swarm Detection', 'Breeding Site Detection']
     }
 ]

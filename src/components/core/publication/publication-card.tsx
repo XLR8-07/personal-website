@@ -3,11 +3,12 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Publication } from "@/types/publication"
-import { Button, Card, Dialog, Flex, Heading, Inset, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Dialog, Flex, Heading, IconButton, Inset, Text, Tooltip } from '@radix-ui/themes';
 import { Separator } from "radix-ui";
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
-// import { FaEye } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiPaperswithcode } from "react-icons/si";
 
 
 
@@ -47,19 +48,13 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                     <Inset clip={'padding-box'} side={'top'} pb={'current'} pt={'current'} px={'current'}>
                         <Image priority src={publication.coverImage} alt={'placeholder'} width={700} height={400} className={'w-fit rounded-t-xl'} />
                     </Inset>
-                    <Dialog.Title>
-                        {publication.title}
-                    </Dialog.Title>
-                    <Dialog.Description>
-                        {publication.authors.join(', ')}
+                    <Dialog.Description className={'text-sm text-gray-12 max-h-[180px] text-ellipsis overflow-hidden line-clamp-[9]'}>
+                        {publication.longDescription}
                     </Dialog.Description>
                     <Separator.Root className="bg-black dark:bg-white h-[1px] w-full" style={{ margin: "15px 0" }} />
-                    {/* <Text size={'1'}>
-                        {publication.shortDescription}
-                    </Text> */}
-                    <Flex direction={'row'} align={'center'} justify={'start'}>
-                        <Flex direction={'column'} justify={'center'} gap={'2'}>
-                            <Button variant={'outline'}>
+                    <Flex direction={'row'} align={'center'} justify={'center'}>
+                        <Flex direction={'column'} justify={'center'} gap={'2'} className={'w-[300px]'}>
+                            <Button>
                                 Read More
                             </Button>
                             <Button>
@@ -73,8 +68,19 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                             style={{ margin: "0 15px" }}
                         />
                         <Flex direction={'column'} justify={'center'} gap={'2'}>
-                            <Text size={'1'}>Code Repository</Text>
-
+                            {/* <Text size={'2'} weight={'bold'}>Code Repository: </Text> */}
+                            <Flex direction={'row'} align={'center'} justify={'center'} gap={'2'}>
+                                <Tooltip content={'Github Repository'}>
+                                    <IconButton color={'gray'} size={'3'} radius={'full'}>
+                                        <FaGithub size={'1.65rem'} />
+                                    </IconButton>
+                                </Tooltip>
+                                <Tooltip content={'Papers with Code'}>
+                                    <IconButton color={'gray'} size={'3'} radius={'full'}>
+                                        <SiPaperswithcode size={'1.65rem'} />
+                                    </IconButton>
+                                </Tooltip>
+                            </Flex>
                         </Flex>
                         <Separator.Root
                             className="bg-black dark:bg-white h-[100px] w-[1px]"
@@ -82,8 +88,14 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                             orientation="vertical"
                             style={{ margin: "0 15px" }}
                         />
-                        <Flex direction={'column'} justify={'center'} gap={'2'}>
-                            <Text size={'1'}>Code Repository</Text>
+                        <Flex gap={'2'} wrap={'wrap'}>
+                            {publication.technologies?.map((tech, index) => (
+                                <BlurFade key={index} delay={0.1 * index} inView>
+                                    <Badge variant={'solid'} highContrast>
+                                        {tech}
+                                    </Badge>
+                                </BlurFade>
+                            ))}
                         </Flex>
                     </Flex>
 

@@ -9,4 +9,5 @@ export interface Publication {
     publisherType: 'Journal' | 'Conference' | 'Book';
     publisherLogo: string;
     coverImage: string;
+    technologies?: string[];
 }
