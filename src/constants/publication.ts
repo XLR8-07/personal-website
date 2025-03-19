@@ -12,6 +12,9 @@ export const PUBLICATIONS: Publication[] = [
         publisherLogo: '/logos/Publication/publishers/nature_logo.png',
         coverImage: '/logos/Publication/coverImg/fracatlas_cover.webp', 
         link: 'https://www.nature.com/articles/s41597-023-02432-4',
+        pdfLink: 'https://www.nature.com/articles/s41597-023-02432-4.pdf',
+        githubLink: 'https://github.com/XLR8-07/FracAtlas',
+        papersWithCodeLink: 'https://paperswithcode.com/dataset/fracatlas',
         technologies: ['Computer Vision', 'Medical Imaging', 'Fracture Localization', 'Fracture Segmentation']
     },
     {
@@ -25,6 +28,9 @@ export const PUBLICATIONS: Publication[] = [
         publisherLogo: '/logos/Publication/publishers/iclr_logo.png',
         coverImage: '/logos/Publication/coverImg/mosquitofusion_cover.jpg',
         link: 'https://openreview.net/forum?id=3s4hFx8pYs&referrer=%5Bthe%20profile%20of%20Md%20Ashiqur%20Rahman%5D(%2Fprofile%3Fid%3D~Md_Ashiqur_Rahman3)',
-        technologies: ['Computer Vision','Swarm Detection', 'Breeding Site Detection']
+        pdfLink: 'https://openreview.net/pdf?id=3s4hFx8pYs',
+        technologies: ['Computer Vision','Swarm Detection', 'Breeding Site Detection'],
+        githubLink: 'https://github.com/faiyazabdullah/MosquitoFusion',
+        papersWithCodeLink: 'https://paperswithcode.com/dataset/mosquitofusion',
     }
 ]

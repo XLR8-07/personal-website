@@ -54,10 +54,14 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                     <Separator.Root className="bg-black dark:bg-white h-[1px] w-full" style={{ margin: "15px 0" }} />
                     <Flex direction={'row'} align={'center'} justify={'center'}>
                         <Flex direction={'column'} justify={'center'} gap={'2'} className={'w-[300px]'}>
-                            <Button>
+                            <Button color={'gray'} className={'cursor-pointer'} onClick={() => {
+                                window.open(publication.link, '_blank');
+                            }}>
                                 Read More
                             </Button>
-                            <Button>
+                            <Button color={'gray'} className={'cursor-pointer'} onClick={() => {
+                                window.open(publication.pdfLink, '_blank');
+                            }}>
                                 PDF
                             </Button>
                         </Flex>
@@ -71,12 +75,16 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                             {/* <Text size={'2'} weight={'bold'}>Code Repository: </Text> */}
                             <Flex direction={'row'} align={'center'} justify={'center'} gap={'2'}>
                                 <Tooltip content={'Github Repository'}>
-                                    <IconButton color={'gray'} size={'3'} radius={'full'}>
+                                    <IconButton color={'gray'} size={'3'} radius={'full'} className={'cursor-pointer'} onClick={() => {
+                                        window.open(publication.githubLink, '_blank');
+                                    }}>
                                         <FaGithub size={'1.65rem'} />
                                     </IconButton>
                                 </Tooltip>
                                 <Tooltip content={'Papers with Code'}>
-                                    <IconButton color={'gray'} size={'3'} radius={'full'}>
+                                    <IconButton color={'gray'} size={'3'} radius={'full'} className={'cursor-pointer'} onClick={() => {
+                                        window.open(publication.papersWithCodeLink, '_blank');
+                                    }}>
                                         <SiPaperswithcode size={'1.65rem'} />
                                     </IconButton>
                                 </Tooltip>
