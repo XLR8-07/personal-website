@@ -24,7 +24,7 @@ export const PublicationCard = ({ publication, index }: { publication: Publicati
                         <Card size={'2'} className='relative w-[140px] h-[100px] mx-2 my-2 object-cover flex justify-center items-center'>
                             <Inset clip={'padding-box'}>
                                 <BlurFade yOffset={0} delay={0.5 * index} inView>
-                                    <Image priority src={publication.publisherLogo} alt={'placeholder'} width={500} height={275} className={'-z-20 h-fit rounded-xl'} />
+                                    <Image priority src={publication.thumbnailImage ? publication.thumbnailImage : publication.publisherLogo} alt={publication.publisher} width={550} height={300} className={'object-cover'} />
                                 </BlurFade>
                             </Inset>
                         </Card>

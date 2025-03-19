@@ -13,4 +13,5 @@ export interface Publication {
     technologies?: string[];
     githubLink?: string;
     papersWithCodeLink?: string;
+    thumbnailImage?: string;
 }

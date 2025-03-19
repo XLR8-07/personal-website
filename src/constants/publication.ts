@@ -15,7 +15,8 @@ export const PUBLICATIONS: Publication[] = [
         pdfLink: 'https://www.nature.com/articles/s41597-023-02432-4.pdf',
         githubLink: 'https://github.com/XLR8-07/FracAtlas',
         papersWithCodeLink: 'https://paperswithcode.com/dataset/fracatlas',
-        technologies: ['Computer Vision', 'Medical Imaging', 'Fracture Localization', 'Fracture Segmentation']
+        technologies: ['Computer Vision', 'Medical Imaging', 'Fracture Localization', 'Fracture Segmentation'],
+        thumbnailImage: '/logos/Publication/coverImg/fracatlas_thumbnail.png'
     },
     {
         title: 'MosquitoFusion: A Multiclass Dataset for Real-Time Detection of Mosquitoes, Swarms, and Breeding Sites Using Deep Learning',
@@ -32,5 +33,6 @@ export const PUBLICATIONS: Publication[] = [
         technologies: ['Computer Vision','Swarm Detection', 'Breeding Site Detection'],
         githubLink: 'https://github.com/faiyazabdullah/MosquitoFusion',
         papersWithCodeLink: 'https://paperswithcode.com/dataset/mosquitofusion',
+        thumbnailImage: '/logos/Publication/coverImg/mosquitofusion_thumbnail.jpg'
     }
 ]
