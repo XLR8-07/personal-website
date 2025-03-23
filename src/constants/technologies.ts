@@ -52,11 +52,27 @@ export const TECHNOLOGIES = [
         simpleIcon: 'github',
     },
     {
-        title: 'Svelte',
-        simpleIcon: 'svelte',
-    },
-    {
         title: 'Python',
         simpleIcon: 'python',
+    },
+    {
+        title: 'OpenCV',
+        simpleIcon: 'opencv',
+    },
+    {
+        title: 'TensorFlow',
+        simpleIcon: 'tensorflow',
+    },
+    {
+        title: 'Keras',
+        simpleIcon: 'keras',
+    },
+    {
+        title: 'Flask',
+        simpleIcon: 'flask',
+    },
+    {
+        title: 'Arduino',
+        simpleIcon: 'arduino',
     },
 ]

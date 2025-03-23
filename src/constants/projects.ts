@@ -2,7 +2,7 @@ import { Project } from '@/types/project';
 
 export const PROJECTS: Project[] = [
     {
-        title: 'Textlight',
+        title: 'M.I.D.A.S',
         imgSrc: 'images/textlight.png',
         technologies: [ 'React', 'Next.js', 'TypeScript', 'Tailwind', 'PostgreSQL' ],
         shortDescription: '_a web application with image exporting.',
@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     {
         title: 'ChatGPT Clone',
         imgSrc: 'images/chatgpt-clone.png',
-        technologies: [ 'React', 'Next.js', 'TypeScript', 'Tailwind', 'MongoDB' ],
+        technologies: [ 'Python' ],
         shortDescription: '_a ChatGPT clone web application.',
         longDescription: `The ChatGPT Clone is a streamlined AI chat app that replicates the experience of interacting with OpenAI's ChatGPT. It allows users to engage in conversations with an AI model, providing insightful and responsive answers. \n\nPerfect for exploring AI-driven interactions, this clone offers a straightforward way to experience and test AI capabilities in real time.`,
         githubLink: 'https://github.com/Scynes/nextjs-chatgpt-clone',
