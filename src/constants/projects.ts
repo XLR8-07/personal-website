@@ -4,11 +4,11 @@ export const PROJECTS: Project[] = [
     {
         title: 'M.I.D.A.S',
         imgSrc: 'images/textlight.png',
-        technologies: [ 'React', 'Next.js', 'TypeScript', 'Tailwind', 'PostgreSQL' ],
-        shortDescription: '_a web application with image exporting.',
-        longDescription: `Textlight is a web application that lets you create and share syntax-highlighted snippets, with the added ability to export them as polished images. \n\nIt’s perfect for developers and content creators who want to showcase their code beautifully and easily.`,
-        githubLink: 'https://github.com/Scynes/textlight',
-        liveLink: 'https://textlight.vercel.app'
+        technologies: [ 'Python', 'OpenCV', 'Arduino', 'TensorFlow', 'Keras' ],
+        shortDescription: 'Mask Identification Door Access System',
+        longDescription: `M.I.D.A.S is a mask identification door access system that uses a camera to detect if a person is wearing a mask. \n\nEnsure public health and safety during the COVID-19 pandemic by automating mask detection at entry points using low-cost, accessible hardware and AI. `,
+        githubLink: 'https://github.com/XLR8-07/M.I.D.A.S',
+        liveLink: 'https://github.com/XLR8-07/M.I.D.A.S'
     },
     {
         title: 'ChatGPT Clone',
