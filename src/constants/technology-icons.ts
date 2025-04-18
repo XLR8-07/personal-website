@@ -3,7 +3,7 @@ import { IconType } from 'react-icons';
 import { RiCss3Fill, RiHtml5Fill, RiNextjsFill, RiReactjsLine, RiTailwindCssFill, RiJavascriptFill } from 'react-icons/ri';
 import { BiLogoTypescript, BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
 import { FaMicrochip, FaPython } from "react-icons/fa";
-import { SiTensorflow, SiKeras, SiFlask, SiOpencv } from "react-icons/si";
+import { SiTensorflow, SiKeras, SiFlask, SiOpencv, SiPytorch } from "react-icons/si";
 
 export const TECHNOLOGY_ICONS: Record<Technology, IconType> = {
     'React': RiReactjsLine,
@@ -20,5 +20,6 @@ export const TECHNOLOGY_ICONS: Record<Technology, IconType> = {
     'Keras': SiKeras,
     'Flask': SiFlask,
     'OpenCV': SiOpencv,
-    'Python': FaPython
+    'Python': FaPython,
+    'PyTorch': SiPytorch
 }

@@ -75,4 +75,8 @@ export const TECHNOLOGIES = [
         title: 'Arduino',
         simpleIcon: 'arduino',
     },
+    {
+        title: 'PyTorch',
+        simpleIcon: 'pytorch',
+    },
 ]
