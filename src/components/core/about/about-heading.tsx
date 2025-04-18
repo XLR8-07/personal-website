@@ -10,7 +10,7 @@ export const AboutHeading = () => {
                     <TextAnimate animation="slideUp" by="word">Hi! I&apos;m Ashiq 👋🏼</TextAnimate>
                 </Heading>
                 <Heading size={{ initial: '5', sm: '7' }} className={'overflow-hidden'}>
-                    <TypingAnimation> Software Engineer | Lecturer </TypingAnimation>
+                    <TypingAnimation> Software Engineer | Former Lecturer  </TypingAnimation>
                 </Heading>
             </Flex>
         </Flex>
